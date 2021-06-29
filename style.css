@@ -1,0 +1,35 @@
+*{
+    font-family: 'Bitter', serif;
+    font-family: 'Roboto', sans-serif;    
+}
+.card-centrar{
+    display: flex;
+    align-items: center;
+
+}
+
+.danny{
+    background: rgba( 0, 0, 0, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 20.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.danny1{
+    background: rgba( 0, 0, 0, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 20.0px );    
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.bg{
+    background-size: cover;    
+    background-image: url(./img/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
