@@ -9,11 +9,24 @@ document.querySelector(".contacto").addEventListener("submit", submitform);
     let correo = document.querySelector(".correo").value;
     let mensaje = document.querySelector(".mensaje").value;
     
-
     saveContactInfo(nombre, correo, mensaje);
     document.querySelector(".contacto").reset();
 
-    if(nombre === '' || correo === '' || mensaje === ''){
+    if(nombre === ''){
+        Swal.fire({
+            title: "Error",
+            text: "Todos los campos son obligatorios",
+            icon: "error",
+            confirmButtonText: "Confirmar"
+        })
+    } if(correo === ''){
+        Swal.fire({
+            title: "Error",
+            text: "Todos los campos son obligatorios",
+            icon: "error",
+            confirmButtonText: "Confirmar"
+        })
+    } if(mensaje === ''){
         Swal.fire({
             title: "Error",
             text: "Todos los campos son obligatorios",
@@ -26,7 +39,7 @@ document.querySelector(".contacto").addEventListener("submit", submitform);
             text: "Tu mensaje fue enviado con exito!",
             icon: "success",
             confirmButtonText: "Confirmar"
-        })
+        });
     }
     }
     
