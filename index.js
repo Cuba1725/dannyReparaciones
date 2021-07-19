@@ -1,7 +1,9 @@
 
-let contactInfo = firebase.database().ref("infos");
+let contactInfo = firebase.database().ref("nuevoCliente");
 document.querySelector(".contacto").addEventListener("submit", submitform);
  
+
+
     function submitform(e) {
         e.preventDefault();
 
@@ -9,9 +11,6 @@ document.querySelector(".contacto").addEventListener("submit", submitform);
     let correo = document.querySelector(".correo").value;
     let mensaje = document.querySelector(".mensaje").value;
     
-    saveContactInfo(nombre, correo, mensaje);
-    document.querySelector(".contacto").reset();
-
     if(nombre === ''){
         Swal.fire({
             title: "Error",
@@ -39,10 +38,14 @@ document.querySelector(".contacto").addEventListener("submit", submitform);
             text: "Tu mensaje fue enviado con exito!",
             icon: "success",
             confirmButtonText: "Confirmar"
+        
         });
+    saveContactInfo(nombre, correo, mensaje);
+    document.querySelector(".contacto").reset();
+
+    windows.location.href = 'index.html';
     }
-    }
-    
+
 
 
 function saveContactInfo(nombre, correo, mensaje) {
@@ -54,6 +57,6 @@ function saveContactInfo(nombre, correo, mensaje) {
         mensaje: mensaje,
     });
 }
-
+}
 
 
