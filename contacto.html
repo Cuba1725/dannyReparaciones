@@ -51,34 +51,36 @@
       <!--FIN NAVBAR-->
 
      <!--PRIMERA TARJETA-->
-      <section>
-        <div class="contenedor danny border-success mb-3" style="margin: 20px;">          
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./img/danny_reparacion.png" class="img-fluid" style="display: block; padding: 20px ;margin: auto;">
-              </div>
-              <div class="col-md-8 card-centrar" style="margin: auto">
-                <div class="card-body">
-                  <h3 class="card-title text-center text-success">CONTACTO</h3>
+     <div class="contenedor">
+        <section>
+          <div class="danny border-success mb-3">          
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="./img/danny_reparacion.png" class="img-fluid" style="display: block; padding: 20px ;margin: auto;">
                 </div>
-              </div>
-            </div>          
-        </div>   
-      </section>   
+                <div class="col-md-8 card-centrar" style="margin: auto">
+                  <div class="card-body">
+                    <h3 class="card-title text-center text-success">CONTACTO</h3>
+                  </div>
+                </div>
+              </div>          
+          </div>   
+        </section>   
 
-      <!--TARJETAS SERVICIOS-->
-      <div class="formulario">
-        <form name="clientes" netlify class="contacto danny border-success">
-          <h2 class="text-success" style="padding-bottom: 50px;">Envianos un mensaje</h2>
+        <!--TARJETAS SERVICIOS-->
+        <div class="formulario">
+          <form name="clientes" netlify action="./gracias.html" class="contacto danny border-success">
+            <h2 class="text-success" style="padding-bottom: 50px;">Envianos un mensaje</h2>
 
-         <input class="nombre" name="nomre" type="text" placeholder="Nombre" style="padding-left: 0px;">
+          <input class="nombre" name="nomre" type="text" placeholder="Nombre" style="padding-left: 0px;" required>
 
-         <input class="correo" name="correo" type="text" placeholder="correo@ejemplo.com" style="padding-left: 0px;">
+          <input class="correo" name="correo" type="text" placeholder="correo@ejemplo.com" style="padding-left: 0px;" required>
 
-         <textarea class="mensaje" name="mensaje" style="padding-left: 0px;" placeholder="Mensaje"></textarea>
+          <textarea class="mensaje" name="mensaje" style="padding-left: 0px;" placeholder="Mensaje" required></textarea>
 
-         <button id="btn" type="submit" class="btn-success" style="margin-top: 20px; padding: 10px; border-radius: 15px;">Enviar Mensaje</button>
-        </form>
+          <button id="btn" type="submit" class="btn-success" style="margin-top: 20px; padding: 10px; border-radius: 15px;">Enviar Mensaje</button>
+          </form>
+        </div>
       </div>
       <!--FIN TARJETAS SERVICIOS-->
 
@@ -102,12 +104,17 @@
               </ul>
           </div>
         </div>
-        <div class="text-light" style="text-align: center; margin-bottom: 10px;">
-          - Desarrollado por
-          <a class="text-success" style="text-decoration: none; ">
-             Daniel Medina 2021 -
-          </a>
-        </div>
+        <div style="text-align: center;">
+          <script type="text/javascript">
+    
+              copyright=new Date();
+    
+              update=copyright.getFullYear();
+    
+          document.write("Copyright " + update + " " + "Desarrollado por ");
+        </script>
+        <a href="https://dribbble.com/Cuba89">Daniel Medina</a>
+      </div>
       </footer>
         
             
