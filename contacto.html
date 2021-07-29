@@ -71,11 +71,11 @@
         <form name="clientes" netlify class="contacto danny border-success">
           <h2 class="text-success" style="padding-bottom: 50px;">Envianos un mensaje</h2>
 
-         <input class="nombre" type="text" placeholder="Nombre" style="padding-left: 0px;">
+         <input class="nombre" name="nomre" type="text" placeholder="Nombre" style="padding-left: 0px;">
 
-         <input class="correo" type="text" placeholder="correo@ejemplo.com" style="padding-left: 0px;">
+         <input class="correo" name="correo" type="text" placeholder="correo@ejemplo.com" style="padding-left: 0px;">
 
-         <textarea class="mensaje" style="padding-left: 0px;" placeholder="Mensaje"></textarea>
+         <textarea class="mensaje" name="mensaje" style="padding-left: 0px;" placeholder="Mensaje"></textarea>
 
          <button id="btn" type="submit" class="btn-success" style="margin-top: 20px; padding: 10px; border-radius: 15px;">Enviar Mensaje</button>
         </form>
@@ -140,7 +140,7 @@
   firebase.initializeApp(firebaseConfig);
 </script>
 
-<script src="./index.js"></script>
+<!--<script src="./index.js"></script>-->
 
   
   </body>
