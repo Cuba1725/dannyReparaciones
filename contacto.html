@@ -21,10 +21,10 @@
   <body class="bg">
 
       <!--INICIO NAVBAR-->
-      <nav class="navbar navbar-expand-md danny border-success menu">
+      <nav class="navbar navbar-expand-md navbarbg border-success menu">
         <div class="container-fluid">
           <a href="index.html" class="navbar-brand">
-            <img src="./img/favicon.ico" style="width: 100px;" alt="">
+            <img src="./img/logo_letra.png" style="width: 100px;" alt="">
           </a>
           <button class="navbar-toggler text-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">MENÚ</button>
 
@@ -68,52 +68,56 @@
         </section>   
 
         <!--TARJETAS SERVICIOS-->
-        <div class="formulario">
-          <form name="clientes" netlify action="./gracias.html" class="contacto danny border-success">
-            <h2 class="text-success" style="padding-bottom: 50px;">Envianos un mensaje</h2>
-
-          <input class="nombre" name="nomre" type="text" placeholder="Nombre" style="padding-left: 0px;" required>
-
-          <input class="correo" name="correo" type="text" placeholder="correo@ejemplo.com" style="padding-left: 0px;" required>
-
-          <textarea class="mensaje" name="mensaje" style="padding-left: 0px;" placeholder="Mensaje" required></textarea>
-
-          <button id="btn" type="submit" class="btn-success" style="margin-top: 20px; padding: 10px; border-radius: 15px;">Enviar Mensaje</button>
-          </form>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2 danny">
+            <div class="col img-form">
+              <img src="./img/contact_us_15o2.png" style="width: 100%;" alt="">
+            </div>
+            <div class="col">
+              <form name="clientes" netlify action="./gracias.html">
+                <h2 class="text-success" style="padding-bottom: 50px;">Envianos un mensaje</h2>
+      
+               <input class="nombre" name="nombre" type="text" placeholder="Nombre" style="padding-left: 0px;">
+      
+               <input class="correo" name="correo" type="text" placeholder="correo@ejemplo.com" style="padding-left: 0px;">
+      
+               <textarea class="mensaje" name="mensaje" style="padding-left: 0px;" placeholder="Mensaje"></textarea>
+      
+               <button id="btn" type="submit" class="btn-success" style="margin-top: 20px; padding: 10px; border-radius: 15px;">Enviar Mensaje</button>
+              </form>
+            </div>
+          </div>        
         </div>
-      </div>
+     </div>
+  
       <!--FIN TARJETAS SERVICIOS-->
 
    
-      <footer class="danny1 border-success" style="margin: 0px;">
+      <footer class="border-success" style="margin: 0px;">
         <div class="container">
-          <div class="social-link" style="display: flex; justify-content: center; align-items: center;">
-            <ul style="display: flex; flex-direction: row; list-style: none; justify-content: space-around; margin-bottom: 0px;">
-              <li style="padding: 10px; font-size: 30px">
-                <a class="icon" href="https://wa.link/3ts3kj"><i class="fab fa-whatsapp"></i></a>
-              </li>
-              <li style="padding: 10px; font-size: 30px">
-                <a class="icon" href="https://www.facebook.com/dannymedina.bng/"><i class="fab fa-facebook"></i></a>
-              </li>
-              <li style="padding: 10px; font-size: 30px">
-                <a class="icon" href="https://www.instagram.com/dannymedinabng/"><i class="fab fa-instagram"></i></a>
-              </li>
-              <li style="padding: 10px; font-size: 30px">
-                <a class="icon" href="https://t.me/Danny_medina_89"><i class="fab fa-telegram"></i></a>
-              </li>
-              </ul>
+           <div class="contredes">
+            <div class="wrapper">
+              <div class="socialicons">
+                <a href="https://www.facebook.com/dannymedina.bng/" title="Facebook" class="icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.link/3ts3kj" title="Whatsapp" class="icon"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/dannymedinabng/" title="Instagram" class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Cuba1725" title="GitHub" class="icon"><i class="fab fa-dribbble"></i></a>
+                <a href="https://www.linkedin.com/in/danielmedina89/" title="LinkedIn" class="icon"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
           </div>
+
         </div>
-        <div style="text-align: center;">
+        <div style="text-align: center; padding-bottom: 10px; font-size: 13px;">
           <script type="text/javascript">
     
               copyright=new Date();
     
               update=copyright.getFullYear();
     
-          document.write("Copyright " + update + " " + "Desarrollado por ");
+          document.write("© " + update + " " + "//Danny Medina");
         </script>
-        <a href="https://dribbble.com/Cuba89">Daniel Medina</a>
+        
       </div>
       </footer>
         
@@ -125,31 +129,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
       
 
-      <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyC7-RO1AYg9I8QFnespYPkHvpAwqP6Wkuw",
-    authDomain: "clientes-f53a1.firebaseapp.com",
-    databaseURL: "https://clientes-f53a1-default-rtdb.firebaseio.com",
-    projectId: "clientes-f53a1",
-    storageBucket: "clientes-f53a1.appspot.com",
-    messagingSenderId: "566239643117",
-    appId: "1:566239643117:web:ec24dfa2b843245bc553e4"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
-
-<!--<script src="./index.js"></script>-->
-
-  
   </body>
 
 </html>

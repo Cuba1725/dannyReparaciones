@@ -9,6 +9,15 @@
     align-items: center;
 
 }
+.navbarbg{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: rgba( 0, 0, 0, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20.0px );
+    -webkit-backdrop-filter: blur( 20.0px );    
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 
 .danny{
     background: rgba( 0, 0, 0, 0.15 );
@@ -34,6 +43,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    
     
 }
 .formulario{
@@ -64,6 +74,11 @@ input, textarea{
     transition: all 300ms;
     border-bottom: 2px solid #2aa198;
     background: none;
+}
+.img-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu ul li {
@@ -97,7 +112,67 @@ input, textarea{
     margin: 20px;
 }
 
+.flex {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    
+}
+footer {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur( 20px );
+}
+
 footer a{
     text-decoration: none;
 
+}
+
+/*----------------*/
+.contredes{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.title {
+    text-align: center;
+    font-size: 3em;
+}
+.socialicons {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.socialicons .icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 15px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    color: #2aa198;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.icon::after {
+    content: '';
+    width: 80px;
+    height: 80px;
+    z-index: -1;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background: #2aa198;    
+    transition: 0.2s;
+}
+.socialicons .icon:hover {
+    color: #fff;
+}
+a:hover::after {
+    bottom: 0;
 }
