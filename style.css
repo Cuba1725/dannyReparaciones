@@ -58,8 +58,8 @@ form{
     display: flex;
     flex-flow: column;
     width: 100%;
-    margin: 20px;
-    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
