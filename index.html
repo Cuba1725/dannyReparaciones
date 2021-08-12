@@ -23,18 +23,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Google Fonts -->    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
-   <!--Animate.style-->
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,300;0,400;1,100;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+   <!--Animate on scroll-->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Danny</title>
   </head>
   <body class="bg">
 
       <!--INICIO NAVBAR-->
-      <nav class="navbar navbar-expand-md navbarbg border-success menu">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-md  menu">
+        <div class="container-fluid" style="padding-left: 20px;">
           <a href="index.html" class="navbar-brand">
             <img src="./img/logo_letra.png" style="width: 100px;" alt="">
           </a>
@@ -84,7 +84,7 @@
         <section>
           <div>
             <div class="row">
-            <div class="col-sm-6 col-md-4" style="padding: 10px;">
+            <div data-aos="flip-left" class="col-sm-6 col-md-4" style="padding: 10px;">
               <div class="danny border-success h-100">
                 <div class="col" style="padding: 10px;">
                   <div class="img" style="display: flex; justify-content: center; align-items: center;">
@@ -97,7 +97,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6 col-md-4 efect" style="padding: 10px;">
+            <div data-aos="flip-left" class="col-sm-6 col-md-4 efect" style="padding: 10px;">
               <div class="danny border-success h-100">
                 <div class="col" style="padding: 10px;">
                   <div class="img text-success" style="display: flex; justify-content: center; align-items: center;">
@@ -110,7 +110,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6 col-md-4" style="padding: 10px;">
+            <div data-aos="flip-left" class="col-sm-6 col-md-4" style="padding: 10px;">
               <div class="danny border-success h-100">
                 <div class="col" style="padding: 10px;">
                   <div class="img" style="display: flex; justify-content: center; align-items: center;">
@@ -123,7 +123,7 @@
               </div>
             </div>
           
-            <div class="col-sm-6 col-md-4" style="padding: 10px;">
+            <div data-aos="flip-left" class="col-sm-6 col-md-4" style="padding: 10px;">
               <div class="danny border-success h-100">
                 <div class="col" style="padding: 10px;">
                   <div class="img text-success" style="display: flex; justify-content: center; align-items: center;">
@@ -136,7 +136,7 @@
               </div>
           </div>
 
-          <div class="col-sm-6 col-md-4" style="padding: 10px;">
+          <div data-aos="flip-left" class="col-sm-6 col-md-4" style="padding: 10px;">
             <div class="danny border-success h-100">
               <div class="col" style="padding: 10px;">
                 <div class="img text-success" style="display: flex; justify-content: center; align-items: center;">
@@ -149,7 +149,7 @@
             </div>
           </div>
 
-          <div class="col-sm-6 col-md-4" style="padding: 10px;">
+          <div data-aos="flip-left" class="col-sm-6 col-md-4" style="padding: 10px;">
             <div class="danny border-success h-100">
               <div class="col" style="padding: 10px;">
                 <div class="img" style="display: flex; justify-content: center; align-items: center;">
@@ -162,7 +162,7 @@
             </div>
           </div>
         
-          <div class="col-sm-6 col-md-6" style="padding: 10px;">
+          <div data-aos="flip-left" class="col-sm-6 col-md-6" style="padding: 10px;">
             <div class="danny border-success h-100">
               <div class="col" style="padding: 10px;">
                 <div class="img" style="display: flex; justify-content: center; align-items: center;">
@@ -175,7 +175,7 @@
             </div>
           </div>
 
-          <div class="col-sm-6 col-md-6" style="padding: 10px;">
+          <div data-aos="flip-left" class="col-sm-6 col-md-6" style="padding: 10px;">
             <div class="danny border-success h-100">
               <div class="col" style="padding: 10px;">
                 <div class="img text-success" style="display: flex; justify-content: center; align-items: center;">
@@ -191,6 +191,23 @@
         </div>
         </section>  
       </div>
+
+      <!--suscripcion-->
+      <div class="cont">
+          <div class="row row-cols-1 row-cols-md-2 danny border-success">
+            <div class="col img-form">
+              <img src="./img/Newsletter_re_wrob.png" style="width: 100%; padding: 20px" alt="">
+            </div>
+            <div class="col">
+              <form name="suscriptores" netlify>
+                <label>Suscribirme</label>
+                <input type="text" placeholder="correo@ejemplo.com">
+                <button id="btn" type="submit" class="btn-success" style="margin-top: 20px; padding-top: 10px;padding-right: 20px; padding-bottom: 10px; padding-left: 20px; border-radius: 15px;">Enviar</button>
+              </form>
+            </div>
+          </div>
+      </div>
+      
         <!--FIN TARJETAS SERVICIOS-->
    
         <footer class="border-success" style="margin: 0px;">
@@ -228,6 +245,10 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
-  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
   </body>
 </html>
